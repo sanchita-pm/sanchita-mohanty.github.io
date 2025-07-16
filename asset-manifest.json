@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6569169d.css",
+    "main.js": "/static/js/main.49482230.js",
+    "static/js/488.adfe11e4.chunk.js": "/static/js/488.adfe11e4.chunk.js",
+    "static/media/DIPM Final (LuvNimbus)S.pptx": "/static/media/DIPM Final (LuvNimbus)S.18f082c904861fcbdbe3.pptx",
+    "static/media/boAt .pptx": "/static/media/boAt .be723eee75576134990d.pptx",
+    "static/media/home-main.svg": "/static/media/home-main.208b7fbe22863243f2d98e5b3b6db500.svg",
+    "static/media/about.png": "/static/media/about.3f62c1b5f701762bde15.png",
+    "static/media/PBMA KalaKshetra.pptx": "/static/media/PBMA KalaKshetra.c4b220af44a2f5679207.pptx",
+    "static/media/home-bg.jpg": "/static/media/home-bg.c178d66efbe1c28bbfd7.jpg",
+    "static/media/Kalakshetra (PBM) Final Project Report.pdf": "/static/media/Kalakshetra (PBM) Final Project Report.cc45950e801503f63e51.pdf",
+    "static/media/Resume-SanchitaMohanty.pdf": "/static/media/Resume-SanchitaMohanty.7be76c7c655dfb1885ec.pdf",
+    "static/media/logo.jpeg": "/static/media/logo.c930da46437f025f0af3.jpeg",
+    "static/media/moon.png": "/static/media/moon.08c8560ae615e449e9e2.png",
+    "static/media/loader.svg": "/static/media/loader.fd437b281afe8ce318ce.svg",
+    "index.html": "/index.html",
+    "main.6569169d.css.map": "/static/css/main.6569169d.css.map",
+    "main.49482230.js.map": "/static/js/main.49482230.js.map",
+    "488.adfe11e4.chunk.js.map": "/static/js/488.adfe11e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6569169d.css",
+    "static/js/main.49482230.js"
+  ]
+}
