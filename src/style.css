@@ -1,0 +1,1516 @@
+/* --------- */
+/* Classy Typography & Font Definitions */
+/* --------- */
+:root {
+  --font-heading: 'Playfair Display', serif; /* Elegant serif for headings */
+  --font-body: 'Inter', sans-serif; /* Clean sans-serif for body text */
+  --font-accent: 'Crimson Text', serif; /* Sophisticated serif for accents */
+}
+
+body {
+  /* Custom palette variables */
+  --dark-purple: #43253A;
+  --brown-sugar: #B06736;
+  --caramel: #E17C3D;
+  --cinereous: #AB837A;
+  --rose-ebony: #6C453D;
+  --hunyadi-yellow: #F3C472;
+  
+  /* Updated theme using custom palette */
+  --imp-text-color: #E17C3D; /* Caramel for important text */
+  --imp-text-color-rgb: 225, 124, 61; /* RGB version for rgba usage */
+  --normal-text-color: #43253A; /* Dark purple for body text */
+  --dark-bg-color: #43253A; /* Dark purple */
+  --light-bg-color: #FAF8F5; /* Soft cream background */
+  --footer-header-bg: rgba(255, 255, 255, 0.95); /* More opaque white for better separation */
+  --resumer-header: #B06736; /* Brown sugar */
+  --transition-begin: rgba(255, 255, 255, 0.7); /* Very light white */
+  --transition-end: rgba(250, 248, 245, 0.8); /* Very light cream */
+  --accent-color: #E17C3D; /* Caramel accent */
+  --secondary-accent: #B06736; /* Brown sugar */
+  --card-bg: rgba(255, 255, 255, 0.9); /* Clean white cards */
+  --border-color: rgba(176, 103, 54, 0.3); /* Brown sugar border */
+  --navbar-bg: rgba(255, 255, 255, 0.95); /* Better navbar background */
+  --footer-bg: rgba(255, 255, 255, 0.98); /* More opaque footer */
+  
+  --section-background-color: var(--hunyadi-gradient-white-violet);
+
+  --image-gradient: linear-gradient(
+    to top right,
+    var(--transition-begin),
+    var(--transition-end)
+  );
+
+  /* Hunyadi Yellow Gradient Options */
+  --hunyadi-gradient-warm: linear-gradient(
+    135deg,
+    var(--hunyadi-yellow),
+    var(--caramel)
+  );
+
+  --hunyadi-gradient-elegant: linear-gradient(
+    to right,
+    var(--hunyadi-yellow),
+    var(--brown-sugar)
+  );
+
+  --hunyadi-gradient-soft: linear-gradient(
+    45deg,
+    rgba(243, 196, 114, 0.8),
+    rgba(255, 255, 255, 0.9)
+  );
+
+  --hunyadi-gradient-rich: linear-gradient(
+    to bottom right,
+    var(--hunyadi-yellow),
+    var(--dark-purple)
+  );
+
+  --hunyadi-gradient-subtle: linear-gradient(
+    to top,
+    rgba(243, 196, 114, 0.3),
+    rgba(243, 196, 114, 0.1)
+  );
+
+  --hunyadi-gradient-white-violet: linear-gradient(
+    135deg,
+    #ffffff,
+    var(--hunyadi-yellow),
+    var(--dark-purple)
+  );
+  
+  font-family: var(--font-body) !important;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  background-color: var(--light-bg-color) !important;
+}
+
+/* Luxurious Light Theme - Professional & Elegant */
+/* Light mode navbar - better separation and visibility */
+body.light {
+  --imp-text-color: #E17C3D; /* Caramel for important text */
+  --imp-text-color-rgb: 225, 124, 61; /* RGB version for rgba usage */
+  --normal-text-color: #43253A; /* Dark purple text */
+  --dark-bg-color: #43253A; /* Dark purple */
+  --light-bg-color: #FAF8F5; /* Soft cream background */
+  --footer-header-bg: rgba(255, 255, 255, 0.95); /* More opaque white for better separation */
+  --resumer-header: #B06736; /* Brown sugar */
+  --transition-begin: rgba(255, 255, 255, 0.7); /* Very light white */
+  --transition-end: rgba(250, 248, 245, 0.8); /* Very light cream */
+  --accent-color: #E17C3D; /* Caramel accent */
+  --secondary-accent: #B06736; /* Brown sugar */
+  --card-bg: rgba(255, 255, 255, 0.9); /* Clean white cards */
+  --border-color: rgba(176, 103, 54, 0.3); /* Brown sugar border */
+  --navbar-bg: rgba(255, 255, 255, 0.95); /* Better navbar background */
+  --footer-bg: rgba(255, 255, 255, 0.98); /* More opaque footer */
+  --section-background-color: linear-gradient(
+    to top right,
+    rgba(243, 196, 114, 0.2),
+    rgba(255, 255, 255, 0.8)
+  );
+}
+
+/* Sophisticated Light-Dark Theme - Luxurious & Professional */
+/* Lighter dark mode with better readability */
+body.dark {
+  --imp-text-color: #E17C3D; /* Caramel for important text */
+  --imp-text-color-rgb: 225, 124, 61; /* RGB version for rgba usage */
+  --normal-text-color: #43253A; /* Dark purple for readable text */
+  --light-bg-color: #F8F5F2; /* Light cream background */
+  --dark-bg-color: #43253A; /* Dark purple for contrast */
+  --footer-header-bg: rgba(248, 245, 242, 0.95); /* Light cream overlay */
+  --resumer-header: #B06736; /* Brown sugar */
+  --transition-begin: rgba(255, 255, 255, 0.8); /* Very light white */
+  --transition-end: rgba(250, 248, 245, 0.9); /* Very light cream */
+  --accent-color: #E17C3D; /* Caramel accent */
+  --secondary-accent: #B06736; /* Brown sugar */
+  --card-bg: rgba(255, 255, 255, 0.9); /* Clean white cards */
+  --border-color: rgba(176, 103, 54, 0.3); /* Brown sugar border */
+  --navbar-bg: rgba(248, 245, 242, 0.95); /* Light cream navbar */
+  --footer-bg: rgba(248, 245, 242, 0.95); /* Light cream footer */
+  
+  --section-background-color: linear-gradient(
+    to top right,
+    rgba(243, 196, 114, 0.12),
+    rgba(255, 255, 255, 0.9)
+  );
+}
+
+.imp-text-color {
+  text-decoration-color: var(--imp-text-color);
+  color: var(--imp-text-color) !important;
+}
+
+/* --------- */
+/*  Preloader */
+/* --------- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: var(--light-bg-color);
+  background-image: url(./Assets/loader.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#preloader-none {
+  opacity: 0;
+}
+
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--footer-header-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--light-bg-color);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-bg-color);
+  border-radius: 12px;
+}
+
+/* --------- */
+/* Navbar Section - Enhanced Alignment & Typography */
+/* --------- */
+.navbar-container {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0 2rem !important;
+}
+
+.navbar-brand-custom {
+  flex: 0 0 auto !important;
+  margin-right: 0 !important;
+}
+
+.navbar-nav-right {
+  flex: 0 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 1rem !important;
+}
+
+.nav-link-custom {
+  font-family: var(--font-body) !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0.5rem 1rem !important;
+  line-height: 1.2 !important;
+}
+
+.dark-mode-toggle {
+  margin-left: 1rem !important;
+}
+
+/* Ensure navbar center items are properly aligned */
+.navbar-nav-center {
+  flex: 1 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 2rem !important;
+}
+
+.navbar-nav-center .nav-item {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navbar-nav-center .fork-btn {
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+}
+
+.sticky {
+  background: var(--navbar-bg) !important;
+  transition: all 0.3s ease-out 0s !important;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.navbar {
+  position: fixed !important;
+  transition: all 0.3s ease-out 0s !important;
+  padding: 0.5rem 0 !important;
+  font-size: 1.2rem !important;
+  background: var(--navbar-bg) !important;
+  backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08) !important;
+  min-height: 70px !important;
+}
+
+.navbar-toggle-custom {
+  order: 3 !important;
+  margin-left: auto !important;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 1.5rem !important;
+  position: relative !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.navbar-toggler span {
+  display: block !important;
+  background-color: var(--footer-header-bg) !important;
+  height: 4px !important;
+  width: 27px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  transform: rotate(0deg) !important;
+  left: 0 !important;
+  opacity: 1 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: 0 !important;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+  transition: transform 0.35s ease-in-out !important;
+  transition: transform 0.35s ease-in-out !important;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute !important;
+  left: 12px !important;
+  top: 10px !important;
+  transform: rotate(135deg) !important;
+  opacity: 0.9 !important;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  height: 12px !important;
+  visibility: hidden !important;
+  background-color: transparent !important;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  position: absolute !important;
+  left: 12px !important;
+  top: 10px !important;
+  transform: rotate(-135deg) !important;
+  opacity: 0.9 !important;
+}
+
+/* Mobile navbar adjustments */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 1rem 0 !important;
+    font-size: 1.4rem !important;
+    background: var(--navbar-bg) !important;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .navbar-container {
+    padding: 0 1rem !important;
+  }
+  
+  .navbar-nav-center {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    margin-top: 1rem !important;
+  }
+  
+  .navbar-nav-right {
+    justify-content: center !important;
+    margin-top: 1rem !important;
+  }
+  
+  .navbar-nav .nav-item a::after {
+    display: none !important;
+  }
+  
+  .nav-link-custom {
+    text-align: center !important;
+    padding: 0.5rem 1rem !important;
+  }
+}
+.navbar-brand {
+  color: var(--dark-bg-color) !important;
+}
+
+.logo {
+  height: 90px !important;
+  width: 90px !important;
+  background-color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+  color: var(--dark-bg-color) !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.nav-link {
+  padding: 0.8rem 1rem !important;
+}
+
+@media (max-width: 767px) {
+  .nav-link {
+    padding: 0.7rem 1rem !important;
+  }
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-item a {
+  font-weight: 400;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-nav .nav-item a::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 0;
+  border-radius: 16px;
+  background: var(--dark-bg-color);
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
+}
+
+.navbar-nav .nav-item a:hover::after {
+  width: 100%;
+}
+
+/* --------- */
+/* Footer - Enhanced visibility for both themes */
+/* --------- */
+.footer {
+  background: var(--footer-bg) !important;
+  bottom: 0 !important;
+  padding-top: 12px !important;
+  padding-bottom: 10px !important;
+  position: fixed !important;
+  backdrop-filter: blur(20px) !important;
+  border-top: 1px solid var(--border-color) !important;
+  box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.08) !important;
+  z-index: 1000 !important;
+}
+.footer-copywright {
+  text-align: center !important;
+}
+
+.footer-body {
+  text-align: center !important;
+}
+
+@media (max-width: 767px) {
+  .footer-copywright {
+    text-align: center !important;
+  }
+
+  .footer-body {
+    text-align: center !important;
+  }
+}
+.footer-icons {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+  padding: 0 !important;
+}
+.footer h3 {
+  font-size: 0.8rem !important;
+  color: var(--dark-bg-color) !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+  font-family: var(--font-body) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.3px !important;
+}
+
+
+/* --------- */
+/* Home section */
+/* --------- */
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#tsparticles {
+  position: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 100%;
+}
+
+.home-header {
+  padding-top: 80px !important;
+}
+
+.home-section {
+  position: relative;
+  z-index: -1;
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+
+.home-content {
+  padding: 2rem 0 2rem !important;
+  color: var(--dark-bg-color);
+  text-align: left;
+}
+
+.heading {
+  font-size: 2.4em !important;
+  padding-left: 50px !important;
+}
+
+.heading-name {
+  font-size: 2.5em !important;
+  padding-left: 45px !important;
+}
+
+.main-name {
+  color: var(--imp-text-color);
+}
+
+/* Home SVG Image Styling */
+.home-section .img-fluid {
+  max-height: 70vh !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+/* Ensure the column containing the image centers it properly */
+.home-section .col-md-5 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.Typewriter__wrapper {
+  font-size: 2.2em !important;
+  color: var(--dark-bg-color) !important;
+  font-weight: 600 !important;
+}
+.Typewriter__cursor {
+  font-size: 2.4em !important;
+  color: var(--imp-text-color) !important;
+}
+
+@media (max-width: 767px) {
+  .Typewriter__wrapper {
+    font-size: 1.4em !important;
+    font-weight: 500 !important;
+    position: absolute !important;
+  }
+  .Typewriter__cursor {
+    display: none !important;
+  }
+  
+  /* Mobile home image adjustments */
+  .home-section .img-fluid {
+    max-height: 50vh !important;
+    margin-top: 2rem !important;
+  }
+  
+  .home-content {
+    padding: 1rem 0 1rem !important;
+  }
+  
+  .heading {
+    font-size: 2em !important;
+    padding-left: 20px !important;
+  }
+  
+  .heading-name {
+    font-size: 2.2em !important;
+    padding-left: 15px !important;
+  }
+}
+
+.myAvtar {
+  justify-content: center !important;
+  padding-top: 9em !important;
+}
+
+@media (max-width: 767px) {
+  .myAvtar {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+  }
+}
+
+.home-about-section {
+  position: relative;
+  padding-bottom: 70px !important;
+  padding-top: 70px !important;
+}
+
+.home-about-description {
+  color: var(--dark-bg-color) !important;
+  padding-top: 100px !important;
+  padding-bottom: 20px !important;
+  text-align: center;
+}
+
+.home-about-body {
+  padding-top: 50px;
+  font-size: 1.2em !important;
+  text-align: left;
+}
+
+.social-icons {
+  display: inline-block !important;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.social-icons-pic {
+  color: var(--dark-bg-color);
+}
+
+.btn-primary {
+  color: var(--dark-bg-color) !important;
+  background-color: var(--resumer-header) !important;
+  border-color: var(--light-bg-color) !important;
+}
+
+.btn-primary:hover {
+  color: var(--dark-bg-color) !important;
+  background-color: var(--resumer-header) !important;
+  border-color: var(--dark-bg-color) !important;
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* --------- */
+/* About */
+/* --------- */
+
+.about-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: var(--dark-bg-color) !important;
+}
+
+.tech-icons {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid var(--dark-bg-color) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px rgba(15, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+}
+
+@media (max-width: 767px) {
+  .tech-icons {
+    margin: 20px !important;
+  }
+}
+
+.tech-icons:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid var(--dark-bg-color) !important;
+}
+.tech-icon-images {
+  padding: 20px !important;
+  line-height: 1.6 !important;
+}
+
+.quote-card-view {
+  border: none !important;
+  color: var(--dark-bg-color) !important;
+  background-color: transparent !important;
+}
+
+.about-activity {
+  list-style: none !important;
+  text-align: left !important;
+  padding-left: 1px !important;
+}
+
+@media (max-width: 767px) {
+  .about-img {
+    padding-top: 0 !important;
+  }
+}
+/* --------- */
+/* Resume */
+/* --------- */
+.resume-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 50px !important;
+  background-image: var(--section-background-color) !important;
+  color: var(--dark-bg-color) !important;
+}
+
+.resume {
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.resume-left {
+  padding-right: 80px !important;
+}
+
+.resume-right {
+  padding-left: 80px !important;
+}
+
+@media (max-width: 767px) {
+  .resume-left {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+
+  .resume-right {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
+.resume .resume-title {
+  font-size: 2em;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.resume .resume-item {
+  padding: 0 0 10px 25px;
+  margin-top: -2px;
+  border-left: 2px solid var(--dark-bg-color);
+  position: relative;
+}
+
+.resume .resume-item .resume-title {
+  line-height: 18px;
+  font-size: 0.9em;
+  background: var(--resumer-header);
+  padding: 8px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+  text-align: justify;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: var(--light-bg-color);
+  border: 2px solid var(--dark-bg-color);
+}
+
+/* --------- */
+/* Fork and Mode Button */
+/* --------- */
+
+.fork-btn {
+  font-size: 1.1em !important;
+  padding-top: 10px !important;
+}
+
+.fork-btn-inner {
+  line-height: 1.4em !important;
+  background-color: var(--resumer-header) !important;
+  padding: 0.25rem 1.1rem !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  /* border-color: var(--dark-bg-color) !important; */
+}
+
+.fork-btn-inner:hover {
+  transform: translateY(-2px) !important;
+  background-color: var(--resumer-header) !important;
+  border-color: var(--dark-bg-color) !important;
+}
+.fork-btn-inner::after {
+  display: none !important;
+}
+/* --------- */
+/* Luxurious & Professional Enhancements for Sanchita's Portfolio */
+/* --------- */
+
+/* Elegant glass-morphism cards */
+.card, .quote-card-view {
+  background: var(--card-bg) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(15px) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 20px !important;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.card::before, .quote-card-view::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--imp-text-color), var(--accent-color), var(--imp-text-color));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover, .quote-card-view:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card:hover::before, .quote-card-view:hover::before {
+  opacity: 1;
+}
+
+/* Sophisticated button styling */
+.btn-primary {
+  background: linear-gradient(135deg, var(--imp-text-color), var(--accent-color)) !important;
+  border: none !important;
+  border-radius: 30px !important;
+  padding: 14px 35px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  font-size: 0.9rem !important;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25) !important;
+  background: linear-gradient(135deg, var(--accent-color), var(--imp-text-color)) !important;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+/* Elegant typography with gradient text */
+.heading-name {
+  background: linear-gradient(135deg, var(--imp-text-color), var(--accent-color)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+}
+
+/* Enhanced tech icons with luxury feel and consistent sizing */
+.tech-icons {
+  font-size: 4.2em !important;
+  margin: 15px !important;
+  padding: 20px !important;
+  opacity: 0.95 !important;
+  background: var(--card-bg) !important;
+  border: 2px solid var(--border-color) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 20px !important;
+  display: table !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden !important;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  position: relative !important;
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.tech-icons svg {
+  width: 1em !important;
+  height: 1em !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+.tech-icon-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+}
+
+/* Custom tooltip styling */
+.custom-tooltip .tooltip-inner {
+  background-color: var(--imp-text-color) !important;
+  color: white !important;
+  font-family: var(--font-body) !important;
+  font-weight: 500 !important;
+  font-size: 0.9rem !important;
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.custom-tooltip .tooltip-arrow::before {
+  border-top-color: var(--imp-text-color) !important;
+}
+
+.tech-icons::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--imp-text-color), var(--accent-color));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.tech-icons:hover {
+  transform: scale(1.08) translateY(-5px) !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.tech-icons:hover::before {
+  opacity: 0.1;
+}
+
+/* Sophisticated navigation styling */
+.navbar-nav .nav-item a {
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.navbar-nav .nav-item a::after {
+  background: linear-gradient(90deg, var(--imp-text-color), var(--accent-color)) !important;
+  height: 3px !important;
+  border-radius: 2px !important;
+}
+
+/* Elegant social icons */
+.social-icons {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.social-icons:hover {
+  transform: translateY(-3px) scale(1.1) !important;
+}
+
+/* Professional project headings */
+/* Elegant scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--imp-text-color), var(--accent-color));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--accent-color), var(--imp-text-color));
+}
+
+/* Luxury animations */
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
+}
+
+.shimmer-effect {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background-size: 200px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Enhanced Home Section */
+.home-section {
+  background: var(--section-background-color) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.home-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(184, 134, 11, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(232, 180, 203, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Enhanced About Section */
+.about-section {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(184, 134, 11, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Enhanced Resume Section */
+.resume-section {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.resume-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.03) 0%, rgba(232, 180, 203, 0.03) 100%);
+  pointer-events: none;
+}
+
+/* Elegant text selection */
+::selection {
+  background: var(--imp-text-color);
+  color: var(--light-bg-color);
+}
+
+::-moz-selection {
+  background: var(--imp-text-color);
+  color: var(--light-bg-color);
+}
+
+/* Professional typography enhancements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  line-height: 1.3 !important;
+}
+
+h1 {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+}
+
+h2 {
+  font-size: 2.5rem !important;
+  font-weight: 600 !important;
+}
+
+h3 {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+}
+
+p, span, div, li {
+  font-family: var(--font-body) !important;
+  line-height: 1.7 !important;
+  font-weight: 400 !important;
+}
+
+/* Elegant accent text */
+.accent-text {
+  font-family: var(--font-accent) !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+}
+
+/* Professional project headings with classy fonts */
+.project-heading {
+  color: var(--normal-text-color) !important;
+  font-family: var(--font-heading) !important;
+  font-size: 2.8rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 30px !important;
+  position: relative !important;
+  text-align: center !important;
+}
+
+.project-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--imp-text-color), var(--accent-color));
+  border-radius: 2px;
+}
+
+/* Elegant heading names with gradient */
+.heading-name {
+  background: linear-gradient(135deg, var(--imp-text-color), var(--accent-color)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-family: var(--font-heading) !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+}
+
+/* Elegant focus states */
+*:focus {
+  outline: 2px solid var(--imp-text-color) !important;
+  outline-offset: 2px !important;
+  border-radius: 4px !important;
+}
+
+/* Professional loading states */
+.loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: loading-shimmer 1.5s infinite;
+}
+
+@keyframes loading-shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Responsive luxury enhancements with classy fonts */
+@media (max-width: 768px) {
+  .card, .quote-card-view {
+    margin: 10px 5px !important;
+    border-radius: 15px !important;
+  }
+  
+  .tech-icons {
+    font-size: 3.5em !important;
+    margin: 10px !important;
+    padding: 15px !important;
+    border-radius: 15px !important;
+  }
+  
+  .btn-primary {
+    padding: 12px 25px !important;
+    font-size: 0.85rem !important;
+  }
+  
+  .project-heading {
+    font-size: 2.2rem !important;
+  }
+  
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  h2 {
+    font-size: 2rem !important;
+  }
+  
+  h3 {
+    font-size: 1.7rem !important;
+  }
+}
+
+/* Elegant quote card styling */
+.quote-card-view {
+  font-family: var(--font-body) !important;
+}
+
+.quote-card-view blockquote {
+  font-family: var(--font-accent) !important;
+  font-size: 1.1rem !important;
+  line-height: 1.8 !important;
+}
+
+/* Professional about activity list */
+.about-activity {
+  font-family: var(--font-body) !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
+}
+
+/* Elegant resume section typography */
+.resume-title {
+  font-family: var(--font-heading) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.resume-item .resume-title {
+  font-family: var(--font-body) !important;
+  font-weight: 600 !important;
+}
+
+/* Elegant preloader enhancement */
+#preloader {
+  background: var(--light-bg-color) !important;
+  background-image: url(./Assets/loader.svg) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+/* Professional accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Smooth animations for tech icons */
+.tech-icons {
+  transition: all 0.3s ease !important;
+}
+
+.tech-icons:hover {
+  transform: scale(1.1) rotate(5deg) !important;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2)) !important;
+}
+
+/* Social icons enhancement */
+.social-icons-pic {
+  transition: all 0.3s ease !important;
+}
+
+.social-icons-pic:hover {
+  transform: translateY(-3px) scale(1.1) !important;
+  color: var(--imp-text-color) !important;
+}
+
+/* Resume section enhancements */
+.resume-title {
+  position: relative !important;
+  padding-bottom: 10px !important;
+}
+
+.resume-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(135deg, var(--imp-text-color), var(--resumer-header));
+  border-radius: 2px;
+}
+
+/* Elegant particle background */
+.particles-canvas {
+  opacity: 0.6 !important;
+}
+
+/* Enhanced navbar brand */
+.navbar-brand img {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1)) !important;
+  transition: all 0.3s ease !important;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05) !important;
+}
+
+/* --------- Projects Section --------- */
+.project-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.project-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.project-card-view {
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  color: #2c3e50 !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(142, 68, 173, 0.3) !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.project-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  background-color: rgba(255, 255, 255, 0.98) !important;
+}
+
+.project-actions {
+  margin-top: auto !important;
+}
+
+.project-actions .btn {
+  transition: all 0.3s ease !important;
+}
+
+.project-actions .btn:hover {
+  background-color: rgba(var(--imp-text-color-rgb), 0.1) !important;
+  border-color: var(--imp-text-color) !important;
+  color: var(--imp-text-color) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Responsive adjustments for projects */
+@media (max-width: 767px) {
+  .project-card {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  
+  .project-heading {
+    font-size: 2em !important;
+  }
+  
+  .project-actions {
+    text-align: center;
+  }
+  
+  .project-actions .btn {
+    width: 100%;
+    margin-bottom: 10px !important;
+    margin-right: 0 !important;
+  }
+}
+/* Custom tab styling for presentations */
+.presentation-tabs .nav-tabs {
+  border-bottom: 1px solid rgba(var(--imp-text-color-rgb), 0.2) !important;
+}
+
+.presentation-tabs .nav-tabs .nav-link {
+  color: var(--normal-text-color) !important;
+  border: 1px solid transparent !important;
+  background-color: transparent !important;
+  opacity: 0.7;
+  transition: all 0.3s ease !important;
+}
+
+.presentation-tabs .nav-tabs .nav-link:hover {
+  color: var(--imp-text-color) !important;
+  border-color: rgba(var(--imp-text-color-rgb), 0.3) !important;
+  opacity: 1;
+}
+
+.presentation-tabs .nav-tabs .nav-link.active {
+  color: var(--imp-text-color) !important;
+  background-color: rgba(var(--imp-text-color-rgb), 0.1) !important;
+  border-color: rgba(var(--imp-text-color-rgb), 0.3) !important;
+  opacity: 1;
+  font-weight: 600 !important;
+}
+
+/* Iframe container styling */
+.iframe-container {
+  position: relative !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.iframe-container:hover {
+  box-shadow: 0 6px 20px rgba(var(--imp-text-color-rgb), 0.2) !important;
+  transform: translateY(-2px) !important;
+}
+
+.iframe-container iframe {
+  border-radius: 6px !important;
+}
+
+/* Back button styling */
+.back-button {
+  transition: all 0.3s ease !important;
+}
+
+.back-button:hover {
+  background-color: rgba(var(--imp-text-color-rgb), 0.1) !important;
+  border-color: var(--imp-text-color) !important;
+  color: var(--imp-text-color) !important;
+  transform: translateX(-3px) !important;
+}
+/* Google Slides iframe styling */
+.google-slides-container {
+  position: relative !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.google-slides-container:hover {
+  box-shadow: 0 6px 20px rgba(var(--imp-text-color-rgb), 0.2) !important;
+  transform: translateY(-2px) !important;
+}
+
+.google-slides-container iframe {
+  border-radius: 6px !important;
+}
+
+/* Responsive Google Slides */
+@media (max-width: 768px) {
+  .google-slides-container {
+    height: 400px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .google-slides-container {
+    height: 300px !important;
+  }
+}
+/* Back button styling - ensure it's clickable */
+.back-to-projects-btn {
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  z-index: 10 !important;
+  position: relative !important;
+  display: inline-block !important;
+  padding: 8px 16px !important;
+  border: 2px solid var(--imp-text-color) !important;
+  color: var(--imp-text-color) !important;
+  background-color: transparent !important;
+  border-radius: 5px !important;
+  transition: all 0.3s ease !important;
+}
+
+.back-to-projects-btn:hover {
+  background-color: rgba(var(--imp-text-color-rgb), 0.1) !important;
+  transform: translateX(-3px) !important;
+  color: var(--imp-text-color) !important;
+  border-color: var(--imp-text-color) !important;
+}
