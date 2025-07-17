@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/sanchita-mohanty.github.io">
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
